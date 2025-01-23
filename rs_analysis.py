@@ -89,7 +89,7 @@ def rs_analysis(stego_image_path):
         print("\nW tym obrazie prawdopodobnie została ukryta wiadomość, ponieważ R-m - S-m > Rm - Sm")
         print(
             f"Różnica (R-m - S-m) - (Rm - Sm) wynosi {(r_neg_m - s_neg_m) - (rm - sm)}")
-    elif diff < -0.1:
+    elif diff <= -0.1:
         print("\nW tym obrazie prawdopodobnie nie została ukryta wiadomość, ponieważ R-m - S-m <= Rm - Sm")
         print(
             f"Różnica (R-m - S-m) - (Rm - Sm) wynosi {(r_neg_m - s_neg_m) - (rm - sm)}")
